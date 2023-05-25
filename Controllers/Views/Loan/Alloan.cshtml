@@ -1,0 +1,69 @@
+﻿@model AlloansViewModel
+@using Newtonsoft.Json;
+
+<style>
+    .payment-form {
+        display: flex;
+        align-items: center;
+    }
+
+    .payment-amount {
+        margin-right: 10px;
+    }
+</style>
+
+
+@if (ViewBag.Error is not null)
+{
+    <p>@ViewBag.Error</p>
+}
+
+@if (ViewBag.Success is not null)
+{
+     <p>@ViewBag.Success</p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Loan Amount</th>
+            <th>End Date</th>
+            <th>Interest Rate</th>
+            <th>Left To Pay</th>
+            <th>Enter Payment Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var loan in Model.LoanSummary)
+        {
+            <tr>
+                <td>@loan.AccountNumber</td>
+                <td>@loan.Amount</td>
+                <td>@loan.EndDate</td>
+                <td>@loan.Interestrate</td>
+                <td>@loan.LeftToPay</td>
+                <td>
+                    <form method="post" asp-controller="Loan" asp-action="MakePayment" class="payment-form">
+                        <div class="input-group payment-amount">
+                            <input type="text" class="form-control" name="paymentAmount" placeholder="Enter payment amount" aria-label="Enter payment amount">
+                        </div>
+                        <select name="selectedAccountId" id="selectedAccountId">
+                            @foreach (var item in loan.Accounts)
+                            {
+                                <option value="@item.Id">@item.AccountNumber - Balance: @item.Balance</option>
+                            }
+                        </select>
+
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Make Payment</button>
+                        </div>
+                        <input type="hidden" name="Id" value="@loan.Id" />
+
+                    </form>
+                </td>
+
+              
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,43 @@
+﻿@model AddCardViewModel
+<h2>Add a new card</h2>
+@if (ViewBag.ErrorMessage != null)
+{
+    @if (ViewBag.ErrorMessage != null)
+    {
+
+        var errorMessages = ((string)ViewBag.ErrorMessage).Split(',');
+        errorMessages = errorMessages.Where(s => !string.IsNullOrWhiteSpace(s)).ToArray();
+        foreach (var errorMessage in errorMessages)
+        {
+            <div class="alert alert-danger">@errorMessage</div>
+        }
+    }
+}
+<form asp-action="Add" method="post">
+    <div class="form-group">
+        <p>(Valid format is xxxx-xxxx-xxxx-xxxx)</p>
+        <label asp-for="@Model.CardNumber"></label>
+        <input asp-for="@Model.CardNumber" class="form-control" />
+        <span asp-validation-for="@Model.CardNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <p>(Valid format is xxxx)</p>
+        <label asp-for="@Model.ExpirationYear"></label>
+        <input asp-for="@Model.ExpirationYear" class="form-control" />
+        <span asp-validation-for="@Model.ExpirationYear" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <p>(Valid format is xx)</p>
+        <label asp-for="@Model.ExpirationMonth"></label>
+        <input asp-for="@Model.ExpirationMonth" class="form-control" />
+        <span asp-validation-for="@Model.ExpirationMonth" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.CVV"></label>
+        <input asp-for="@Model.CVV" class="form-control" />
+        <span asp-validation-for="@Model.CVV" class="text-danger"></span>
+    </div>
+   
+
+    <button type="submit" class="btn btn-primary" onclick="return confirm('Do you want to add a new card?')">Add</button>
+</form>

@@ -1,0 +1,44 @@
+﻿
+@model AllOwnedAssetsViewModel
+
+@if (Model.OwnedAssets.Count == 0)
+{
+    <p>You don't own any assets on this account.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Sum</th>
+                <th>Risk</th>
+                <th>Type</th>
+                <th>On Account</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OwnedAssets)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Quantity.ToString("N2")</td>
+                    <td>@item.Sum.ToString("N4")</td>
+                    <td>@item.Risk.ToString()</td>
+                    <td>@item.Type</td>
+                    <td>@item.OnAccount</td>
+                </tr>
+                <tr>
+                    <td colspan="6">&nbsp;</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if( ViewBag.TotalAmount != 0){
+<p>Total amount @ViewBag.TotalAmount</p>
+}
+
+

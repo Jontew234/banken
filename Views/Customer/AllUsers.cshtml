@@ -1,0 +1,88 @@
+﻿@model AllUsers
+
+<h2>User settings</h2>
+
+@if (Model.Users.Count == 0 && ViewBag.Role is null && ViewBag.Name is null)
+{
+    <p>Theres no users of this system</p>
+}
+@if (ViewBag.Error != null)
+{
+    <p>@ViewBag.Error</p>
+}
+@if (ViewBag.AlreadyTaken != null)
+{
+    <p>@ViewBag.AlreadyTaken</p>
+}
+
+
+@if (ViewBag.Name != null)
+{
+    <p>@ViewBag.Name</p>
+}
+
+@if (ViewBag.Role != null)
+{
+    <p>@ViewBag.Role</p>
+}
+
+
+<form asp-controller="Customer" asp-action="AllUsers" method="get">
+    <div>
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+            <option value="1">Role</option>
+            <option value="2">Name</option>
+        </select>
+        <button type="submit">Sort</button>
+        <input type="text" name="search" placeholder="Enter Searchstring">
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Roles</th>
+            <th>AccountStatus</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model.Users)
+        {
+            <tr>
+                <td>@role.UserName</td>
+                <td>@role.Roles</td>
+                @if(role.IsLocked == true)
+                {
+                    <td>Locked</td>
+                }
+                else 
+                {
+                <td>Active</td>
+                }
+                <td>
+                    <form asp-controller="Customer" asp-action="ChooseRole" method="get">
+                        <input type="hidden" name="id" value="@role.UserName" />
+                        <button type="submit">Change the user's role</button>
+                    </form>
+                </td>
+
+                <td>
+                    <form asp-controller="Customer" asp-action="Activate" method="post">
+                        <input type="hidden" name="userName" value="@role.UserName" />
+                        <button type="submit" name="userName" value="@role.UserName">Activate users account</button>
+                    </form>
+                </td>
+                <td>
+                    <form asp-controller="Customer" asp-action="InActivate" method="post">
+                        <input type="hidden" name="userName" value="@role.UserName" />
+                        <button type="submit" name="userName" value="@role.UserName">Inactivate the user's account</button>
+                    </form>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+

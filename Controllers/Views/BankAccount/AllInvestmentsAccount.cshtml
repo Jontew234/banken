@@ -1,0 +1,34 @@
+﻿@model AllInvestmentAccountViewModel
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Balance</th>
+            <th>Account Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var account in Model.InvestmentAccounts)
+        {
+        
+            <tr>
+                <td>@account.AccountNumber</td>
+                <td>@account.Balance</td>
+                <td>@account.AccountType</td>
+        
+                <td>
+                    @using (Html.BeginForm("PlaceOrder", "Investment", FormMethod.Get))
+                {
+                       <input type="hidden" name="id" value="@ViewBag.Id" />
+                       <input type="hidden" name="acc" value="@account.Id" />
+                       <button type="submit">Add Account</button>
+                }
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+

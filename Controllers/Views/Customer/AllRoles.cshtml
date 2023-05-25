@@ -1,0 +1,23 @@
+﻿@model AllRoles
+
+<h2>Roles</h2>
+
+@if(Model.Roles.Count == 0)
+{
+    <p>Theres no roles in the system yet</p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model.Roles)
+        {
+            <tr>
+                <td>@role.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

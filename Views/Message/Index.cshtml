@@ -1,0 +1,61 @@
+﻿@model ListOfMessageViewModel
+
+<h1>Received Messages</h1>
+<form asp-controller="Message" asp-action ="index" method="get">
+    <div>
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+            <option value="1"> Oldest first</option>
+            <option value="2">Unread messages</option>
+            <option value="3">Already read messages</option>
+            <option value="4"> Newest first</option>
+          
+        </select>
+        <input type="text" name="search" placeholder="Enter search keyword">
+        <button type="submit">Sort</button>
+    </div>
+</form>
+@if (Model.ListOfMessages.Count == 0)
+{
+    <p>No messages found.</p>
+    <a asp-controller="Message" asp-action="SendMessage" class="list-group-item list-group-item-action bg-light">New message</a>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Sender</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Time sent</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var message in Model.ListOfMessages)
+            {
+                <tr>
+                    <td>@message.Sender</td>
+                    <td>@message.Subject</td>
+                    <td>@message.Body</td>
+                    <td>@message.SentDate</td>
+                    <td>@(message.IsRead ? "Read" : "Unread")</td>
+
+                    <td>
+                        <div class="btn-group">
+                        <form method="post" action="@Url.Action("DeleteMessage", "Message", new { messageId = message.Id })" onsubmit="return confirm('Are you sure you want to delete this message?');">
+                            <input type="hidden" name="messageId" value="@message.Id" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+       
+                            <a href="@Url.Action("Read", "Message", new { messageId = message.Id })" class="btn btn-primary">Read</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <a asp-controller="Message" asp-action="SendMessage" class="list-group-item list-group-item-action bg-light">New message</a>
+    </table>
+}

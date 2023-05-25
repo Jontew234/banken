@@ -1,0 +1,29 @@
+﻿@model SummaryBeforeInvoicePayment
+
+<h2>Payment summary</h2>
+
+<form method="post" asp-controller="Invoice" asp-action="MakePayment" class="payment-form">
+    <div>
+        <label>Invoice:</label>
+        <span>@Model.ID</span>
+        <input type="hidden" name="ID" value="@Model.ID" />
+    </div>
+
+    <div>
+        <label>Amount:</label>
+        <span>@Model.Amount</span>
+        <input type="hidden" name="Amount" value="@Model.Amount" />
+    </div>
+
+    <div>
+        <label>Account Number:</label>
+        <span>@Model.AccountNumber</span>
+        <input type="hidden" name="AccountNumber" value="@Model.AccountNumber" />
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Accept Payment</button>
+    </div>
+</form>
+
+

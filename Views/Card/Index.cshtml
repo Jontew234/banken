@@ -1,0 +1,43 @@
+﻿@model CardViewModel
+
+
+@if ( Model == null|| Model.Cards == null || Model.Cards.Count() == 0)
+{
+    <h1>No cards available</h1>
+}
+else
+{
+    <h1>Your cards</h1>
+    foreach (var card in Model.Cards)
+    {
+        
+        <div>
+            <h3>Card number: @card.CardNumber</h3>
+            <p>Card number: @card.CardNumber</p>
+            <p>Expiration month: @card.ExpirationMonth</p>
+            <p>Expiration year: @card.ExpirationYear</p>
+            <p>CVV: @card.CVV</p>
+            @if (card.OnlinePurchase == true)
+            {
+                <p>Online purchase: open</p>
+            }
+            else
+            {
+                <p>Online purchase: closed</p>
+            }
+            @if(card.Active == true)
+            {
+                <p>the card is ready to use</p>
+            }
+            else
+            {
+                <p>the card is blocked</p>
+            }
+
+            <a href="@Url.Action("EditCard", "Card", new { id = card.Id })">Edit Card</a>
+
+        </div>
+      
+    }
+}
+<a asp-controller="Card" asp-action="Add">Add a new card!</a>

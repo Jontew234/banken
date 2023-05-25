@@ -1,0 +1,91 @@
+﻿
+@using Platinum.Controllers
+@model DisplayAccountViewModel
+
+<h2>Accounts</h2>
+
+@if (!Model.Accounts.Any() || Model == null)
+{
+    <p>No accounts found.</p>
+}
+else
+{
+    <form asp-controller="BankAccount" asp-action="index" method="get">
+        <div>
+            <label for="sort">Sort by:</label>
+            <select id="sort" name="sort">
+                <option value="1">Savings</option>
+                <option value="2">Investment</option>
+                <option value="3">Checking</option>
+            </select>
+            <button type="submit">Sort</button>
+        </div>
+    </form>
+
+    if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+    if (ViewBag.Transfer != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Transfer</div>
+    }
+    
+    if (ViewBag.Cards != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Cards</div>
+    }
+
+    if (ViewBag.SellOf != null)
+    {
+        <div class="alert alert-danger">@ViewBag.SellOf</div>
+    }
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Account Number</th>
+                <th>Balance</th>
+                <th>Account Type</th>
+                <th>All cards</th>
+                <th>See cards</th>
+                <th>Transactions</th>
+                <th>Delete</th>
+                <th>Assets</th>
+                <th>All orders</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var account in Model.Accounts)
+            {
+                <tr>
+                    <td>@account.AccountNumber</td>
+                    <td>@account.Balance</td>
+                    <td>@account.AccountType</td>
+                    <td>@if (account.AccountType != "Investment")
+                        {
+                            <a href="@Url.Action("AllCards", "BankAccount", new { id = account.Id })">All cards</a>
+                        }</td>
+                    <td>@if (account.HasCard)
+                        {
+                            <a href="@Url.Action("CardsLinkedToAccount", "BankAccount", new { id = account.Id })">See cards</a>
+                        }</td>
+                    <td><a href="@Url.Action("AccountsTransactions", "Transaction", new { id = account.Id })">Transactions</a></td>
+                    <td><a href="@Url.Action("DeleteAccount", "BankAccount", new { id = account.Id })">Delete</a></td>
+                    <td>@if (account.AccountType == "Investment")
+                        {
+                            <a href="@Url.Action("AllAssets", "Investment", new { id = account.Id })">Assets</a>
+                        }</td>
+                    <td>
+                        @if (account.AccountType == "Investment")
+                        {
+                            <a href="@Url.Action("AllOrders", "Investment", new { id = account.Id })">All Orders</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-controller="BankAccount" asp-action="AddAccount"> Add a new account</a>

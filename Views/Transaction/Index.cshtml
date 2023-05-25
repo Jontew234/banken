@@ -1,0 +1,49 @@
+﻿
+@model DisplayAllAccountsViewModel
+
+<form asp-action="Transaction" method="post">
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        
+          var errorMessages = ((string)ViewBag.ErrorMessage).Split(',');
+        errorMessages = errorMessages.Where(s => !string.IsNullOrWhiteSpace(s)).ToArray();
+    foreach (var errorMessage in errorMessages)
+      {
+        <div class="alert alert-danger">@errorMessage</div>
+      }
+    }
+    @if (ViewBag.SuccessMessage != null)
+    {
+        <div class="alert alert-success">@ViewBag.successMessage</div>
+    }
+
+
+    <div class="form-group">
+        <label for="fromAccount">From Account:</label>
+        <select class="form-control" id="from" name="from">
+            @foreach (var account in Model.Accounts)
+            {
+              
+                <option value="@account.Id">Account: @account.AccountNumber ,Balance: @account.Balance ,Type @account.AccountType</option>
+
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="toAccount">To Account:</label>
+        <select class="form-control" id="to" name="to">
+            @foreach (var account in Model.Accounts)
+            {
+
+         
+                <option value="@account.Id">Account: @account.AccountNumber,Balance: @account.Balance ,Type @account.AccountType</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" class="form-control" id="amount" name="amount" />
+    </div>
+    <button type="submit" class="btn btn-primary">Transfer</button>
+</form>       

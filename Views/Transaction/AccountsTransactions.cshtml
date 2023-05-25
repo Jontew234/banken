@@ -1,0 +1,72 @@
+﻿@model AllAccountsTransactions
+
+@if (Model.accountsTransactions.Count() == 0)
+{
+    <p>No transactions available</p>
+    
+}
+else {
+    @using (Html.BeginForm("AccountsTransactions", "Transaction", FormMethod.Get))
+{
+    <div>
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+            <option value="date_desc">Date (Newest First)</option>
+            <option value="date_asc">Date (Oldest First)</option>
+            <option value="amount_desc">Amount (Highest First)</option>
+            <option value="amount_asc">Amount (Lowest First)</option>
+            <option value="account_from">Transactions from your account</option>
+            <option value="account_to">Transactions to this account</option>
+              
+        </select>
+        <input type="text" name="date" placeholder="Enter date in format yyyy-mm-dd">
+        <button type="submit">Sort</button>
+    </div>
+      @if (ViewBag.ErrorMessage != null)
+            {
+                <p>@ViewBag.ErrorMessage</p>
+            }
+      
+}
+
+<table class="table">
+    <thead>
+        <tr>
+          
+            <th>Amount</th>
+            <th>Date</th>
+            <th>From Bank Account </th>
+            <th>To Bank Account </th>
+            <th>Category </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.accountsTransactions)
+        {
+            
+            <tr>
+              
+                <td>@item.Amount</td>
+                <td>@item.Date</td>
+
+                @if(@item.toAccount == false)
+                {
+                    <td>My Account</td>
+                }
+                    else { <td>@item.FromBankAccount</td> }
+
+                    @if (@item.toAccount == true)
+                    {
+                        <td>My Account</td>
+                    }
+                    else
+                    {
+                        <td>@item.ToBankAccount</td>
+                    }
+                    <td>@item.Category</td>
+            </tr> 
+        }
+    </tbody>
+</table> }
+

@@ -1,0 +1,41 @@
+﻿@model AllRoles
+
+<h2>Roles</h2>
+
+@if (Model.Roles.Count == 0)
+{
+    <p>Theres no roles in the system yet</p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model.Roles)
+        {
+            <tr>
+                <td>@role.Name</td>
+            </tr>
+             <tr>
+        <td>
+                    <form asp-controller="Customer" asp-action="AddUserToRole" method="post">
+                <input type="hidden" name="userId" value="@ViewBag.Id" />
+                <input type="hidden" name="roleName" value="@role.Name" />
+                <button type="submit">Add</button>
+            </form>
+        </td>
+            </tr>
+            <tr>
+                <td>
+                    <form asp-controller="Customer" asp-action="DeleteUserFromRole" method="post">
+                        <input type="hidden" name="userId" value="@ViewBag.Id" />
+                        <input type="hidden" name="roleName" value="@role.Name" />
+                        <button type="submit">Remove</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

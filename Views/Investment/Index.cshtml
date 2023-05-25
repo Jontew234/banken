@@ -1,0 +1,42 @@
+﻿@model AllInvestmentsViewModel
+
+
+@if (Model.Indexes.Count() == 0)
+{
+    <p>No transactions available</p>
+
+}
+<p>@ViewBag.Message</p>
+
+<h1>All Investments</h1>
+
+<form asp-controller="Investment" asp-action ="index" method="get">
+    <div>
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+            <option value="1">Risk (Highest risk)</option>
+            <option value="2">Risk (Lowest risk)</option>
+            <option value="3">Sort by category</option>
+            <option value="4">Sort by exchange</option>
+            <option value="5">Get asset</option>
+        </select>
+        <input type="text" name="Keyword" placeholder="Enter search keyword">
+        <button type="submit">Sort</button>
+    </div>
+</form>
+
+
+@foreach(var index in Model.Indexes){
+<h4>@index.Name</h4>
+<p>Type: @index.Type</p>
+<p>Price: @index.Price</p>
+    <p>Risk: @index.Risk</p>
+    <p>Exchange: @index.Exchange</p>
+    <p>Last updated @index.LastUpdated</p>
+    <a href="@Url.Action("PlaceOrder", "Investment", new { id = index.Id })">Place Order</a>
+
+}
+
+
+
+

@@ -1,0 +1,30 @@
+﻿@model ListOfLoanTermsViewModel
+
+<h1>Loan Details</h1>
+
+@foreach (var loan in Model.LoanTerms)
+{
+    <div class="loan-details">
+        <h2>@loan.Name</h2>
+        <table class="table">
+            <tr>
+                <th>Terms</th>
+                <td>@loan.Terms</td>
+            </tr>
+            <tr>
+                <th>Interest Rate</th>
+                <td>@loan.Interestrate</td>
+            </tr>
+            <tr>
+                <th>Active</th>
+                <td>@(loan.IsActive ? "Yes" : "No")</td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+
+
+
+}
+<a href="@Url.Action("AddLoanTerms", "LoanTerm")" class="btn btn-primary">Add a new loanterm</a>
+

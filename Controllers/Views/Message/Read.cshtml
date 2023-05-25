@@ -1,0 +1,21 @@
+﻿
+
+
+@model ReadViewModel
+
+<h1>Message Details</h1>
+
+<div>
+    <strong>Sender:</strong> @Model.Sender
+</div>
+<div>
+    <strong>Subject:</strong> @Model.Subject
+</div>
+<div>
+    <strong>Content:</strong>
+    <p>@Model.Body</p>
+</div>
+
+<div class="mt-3">
+    <a href="@Url.Action("SendMessage", "Message", new { subject = Model.Subject, receiver = Model.Receiver})" class="btn btn-primary">Reply</a>
+</div>

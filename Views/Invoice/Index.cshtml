@@ -1,0 +1,71 @@
+﻿@model ListOfInvoiceViewModel
+
+@if (ViewBag.NoInvoices is not null)
+{
+    <p>@ViewBag.NoInvoices</p>
+}
+
+else
+{
+    @if (ViewBag.AlreadyPayed is not null)
+    {
+        <p style="color: red;"> @ViewBag.AlreadyPayed</p>
+    }
+     @if (ViewBag.LowAmount is not null)
+    {
+        <p style="color: red;"> @ViewBag.LowAmount</p>
+    }
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Invoice</th>
+                <th>Amount</th>
+                <th>Payed</th>
+                <th>Last Day To Pay</th>
+                <th>On Loan</th>
+               
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var invoice in Model.invoices)
+            {
+                <tr>
+                   
+                    <td>@invoice.InvoiceId</td>
+                    <td>@invoice.Amount</td>
+                    <td>@(invoice.Payed ? "Yes" : "No")</td>
+                    <td>@invoice.LastDayToPay.ToString("yyyy-MM-dd")</td>
+                    <td>@invoice.LoansId</td>
+                    
+                    <td>
+                        <form method="get" asp-controller="Invoice" asp-action="MakePayment" class="payment-form">
+                            <input type="hidden" name="id" value="@invoice.LoansId" />
+                            <input type="hidden" name="InvoiceId" value="@invoice.InvoiceId" />
+                            <select name="selectedAccountId" id="selectedAccountId">
+                     @foreach (var accountNumber in invoice.AccountNumbers)
+                     {
+                     <option value="@accountNumber">@accountNumber</option>
+                     }
+                     </select>
+
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Make Payment</button>
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" asp-controller="Invoice" asp-action="ToPdf">
+                            <input type="hidden" name="invoice" value='@Json.Serialize(invoice)'/>
+                            <button style="background-color: blue; color: white;" type="submit">PDF</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+}
+
+
+

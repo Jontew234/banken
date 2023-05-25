@@ -1,0 +1,34 @@
+﻿@model ListofCardsLinkedToAccount
+
+@{
+    int c = Model.accounts.FirstOrDefault()?.CardId ?? 0;
+}
+<h1>Accounts linked to account</h1>
+
+@if (Model.accounts.Count() == 0)
+{
+    <p>This card isnt linked to any account.</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Account Number, </th>
+                <th>Account Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var card in Model.accounts)
+            {
+                <tr>
+                   
+                    <td>@card.AccountNumber</td>
+                    <td>@card.AccountType</td>
+                  
+                </tr>
+            }
+        </tbody>
+    </table>
+    <td><a href="@Url.Action("RemoveCardFromAccount", new {cardId = c })">Remove card from account</a></td>
+}

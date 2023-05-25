@@ -1,0 +1,62 @@
+﻿
+@model CheckLoanTermsViewModel
+
+
+<h3>Loan money here!!</h3>
+
+<form method="post" action="@Url.Action("Index", "Loan")">
+        <label for="Months">Months:</label>
+    <input type="text" id="Months" name="Months"/>
+    <label for="Amount">Loan amount:</label>
+    <input type="text" id="amount" name="Amount"/>
+    <button type="submit">Apply</button>
+    <a href="@Url.Action("Alloan", "Loan")">All Loans</a>
+</form>
+
+@if (ViewBag.Denied is not null)
+{
+    <h4>@ViewBag.Denied</h4>
+}
+
+else if (Model is not null)
+{
+    <h3>Terms for this loan</h3>
+        <label for="amount">Loan amount:</label>
+        <input type="text" id="amount" name="amount" value="@Model.Amount" readonly />
+
+        <label for="interest">Interest:</label>
+        <input type="text" id="interest" name="interest" value="@Model.Interest" readonly />
+
+        <label for="interestRate">Interest rate:</label>
+        <input type="text" id="interestRate" name="interestRate" value="@Model.InterestRate" readonly />
+
+        <form method="post" action="@Url.Action("GetLoan", "Loan")">
+            <input type="hidden" name="Amount" value="@Model.Amount" />
+            <input type="hidden" name="Interest" value="@Model.Interest" />
+            <input type="hidden" name="InterestRate" value="@Model.InterestRate" />
+        <input type="hidden" name="Months" value="@Model.Months" />
+        <input type="hidden" name="UserName" value="@Model.UserName" />
+        <input type="hidden" name="Months" value="@Model.Months" />
+        <input type="hidden" name="loanTerm" value="@Model.loanTerm" />
+         <div class="col-sm-8">
+            <select asp-for="@Model.ChoosenAccount" multiple class="form-select">
+                @foreach (var item in @Model.Accounts)
+                {
+                    <option value="@item.AccountNumber">@item.AccountNumber</option>
+                }
+            </select>
+      
+            <button type="submit">Apply for loan</button>
+        </form>
+}
+@if (ViewBag.Errors != null && ViewBag.Errors.Count > 0)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewBag.Errors)
+            {
+                <li>@error</li>
+            }
+        </ul>
+    </div>
+}

@@ -1,0 +1,413 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Platinum
+build_property.RootNamespace = Platinum
+build_property.ProjectDir = C:\Users\jonat\Desktop\Platinum\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jonat\Desktop\Platinum
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jonat/Desktop/Platinum/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/BankAccount/AddAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQmFua0FjY291bnRcQWRkQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/BankAccount/AddBusinessAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQmFua0FjY291bnRcQWRkQnVzaW5lc3NBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/BankAccount/AllCards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQmFua0FjY291bnRcQWxsQ2FyZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/BankAccount/AllInvestmentsAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQmFua0FjY291bnRcQWxsSW52ZXN0bWVudHNBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/BankAccount/BusinessAccountInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQmFua0FjY291bnRcQnVzaW5lc3NBY2NvdW50SW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/BankAccount/CardsLinkedToAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQmFua0FjY291bnRcQ2FyZHNMaW5rZWRUb0FjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/BankAccount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQmFua0FjY291bnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Card/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ2FyZFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Card/EditCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ2FyZFxFZGl0Q2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Card/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Card/IsCardLinkedToAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ2FyZFxJc0NhcmRMaW5rZWRUb0FjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Customer/AdminStartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ3VzdG9tZXJcQWRtaW5TdGFydFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Customer/AllRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ3VzdG9tZXJcQWxsUm9sZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Customer/AllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ3VzdG9tZXJcQWxsVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Customer/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ3VzdG9tZXJcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Customer/ChooseRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ3VzdG9tZXJcQ2hvb3NlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Customer/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ3VzdG9tZXJcQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Customer/ManagerStartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcQ3VzdG9tZXJcTWFuYWdlclN0YXJ0UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Investment/AllAssets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSW52ZXN0bWVudFxBbGxBc3NldHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Investment/AllOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSW52ZXN0bWVudFxBbGxPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Investment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSW52ZXN0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Investment/Ordersummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSW52ZXN0bWVudFxPcmRlcnN1bW1hcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Investment/PlaceOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSW52ZXN0bWVudFxQbGFjZU9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Invoice/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSW52b2ljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Invoice/MakePayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSW52b2ljZVxNYWtlUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Invoice/PaymentSucceded.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcSW52b2ljZVxQYXltZW50U3VjY2VkZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/LoanTerm/AddLoanTerms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTG9hblRlcm1cQWRkTG9hblRlcm1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/LoanTerm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTG9hblRlcm1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Loan/Alloan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTG9hblxBbGxvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Loan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTG9hblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Loan/LoanSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTG9hblxMb2FuU3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Message/Read.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTWVzc2FnZVxSZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Message/Reply.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTWVzc2FnZVxSZXBseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Message/SendMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcTWVzc2FnZVxTZW5kTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Transaction/AccountsTransactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcVHJhbnNhY3Rpb25cQWNjb3VudHNUcmFuc2FjdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Transaction/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcVHJhbnNhY3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/BankAccount/AddAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQWRkQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/BankAccount/AddBusinessAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQWRkQnVzaW5lc3NBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/BankAccount/AllCards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQWxsQ2FyZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/BankAccount/AllInvestmentsAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQWxsSW52ZXN0bWVudHNBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/BankAccount/BusinessAccountInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQnVzaW5lc3NBY2NvdW50SW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/BankAccount/CardsLinkedToAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQ2FyZHNMaW5rZWRUb0FjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/BankAccount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Card/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Card/EditCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZFxFZGl0Q2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Card/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Card/IsCardLinkedToAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZFxJc0NhcmRMaW5rZWRUb0FjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Customer/AdminStartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRtaW5TdGFydFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Customer/AllRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWxsUm9sZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Customer/AllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWxsVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Customer/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Customer/ChooseRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ2hvb3NlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Customer/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Customer/ManagerStartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTWFuYWdlclN0YXJ0UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Investment/AllAssets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxBbGxBc3NldHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Investment/AllOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxBbGxPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Investment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Investment/Ordersummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxPcmRlcnN1bW1hcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Investment/PlaceOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxQbGFjZU9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Invoice/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Invoice/MakePayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxNYWtlUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Invoice/PaymentSucceded.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxQYXltZW50U3VjY2VkZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/LoanTerm/AddLoanTerms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblRlcm1cQWRkTG9hblRlcm1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/LoanTerm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblRlcm1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Loan/Alloan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxBbGxvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Loan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Loan/LoanSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxMb2FuU3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Message/Read.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxSZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Message/Reply.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxSZXBseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Message/SendMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxTZW5kTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Transaction/AccountsTransactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cQWNjb3VudHNUcmFuc2FjdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/Transaction/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/Desktop/Platinum/Controllers/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2rdbzey3f7
+
+[C:/Users/jonat/Desktop/Platinum/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zomma3dk11

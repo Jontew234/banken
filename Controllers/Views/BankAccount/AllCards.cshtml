@@ -1,0 +1,27 @@
+﻿@model AllViewModel
+
+@if(Model.Cards.Count() == 0)
+{
+    <p>Add a card first!</p>
+}
+else {
+<table>
+    <thead>
+        <tr>
+           
+            <th>Card Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var card in Model.Cards)
+        {
+            <tr>
+                <td>@card.CardNumber</td>
+                    <td><a href="@Url.Action("AddCardToAccount", new { accountId = card.Account, cardId = card.Id })">Add card</a></td>
+
+                    
+            </tr>
+        }
+    </tbody>
+</table> }
+

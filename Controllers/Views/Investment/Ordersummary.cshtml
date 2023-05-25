@@ -1,0 +1,16 @@
+﻿@model TransactionSummaryViewModel
+
+<h1>Transaction summary</h1>
+
+<p><strong>Account Number:</strong> @Model.AccountNumber</p>
+@if (Model.BuyOrsell == true)
+{
+    <p><strong>TransactionType : Bought</strong></p>
+}
+else
+{
+<p><strong>TransactionType : Sold</strong></p>
+}
+<p><strong>Amount:</strong> @Model.Amount</p>
+<p><strong>Asset:</strong> @Model.Asset</p>
+

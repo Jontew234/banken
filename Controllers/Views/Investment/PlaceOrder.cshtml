@@ -1,0 +1,73 @@
+﻿@model AssetViewModel
+<h1> Buy And sell assets</h1>
+
+<h2>@Model.Name</h2>
+<p>Price @Model.Price</p>
+<p>Type @Model.Type</p>
+<p>Exchange @Model.Exchange</p>
+<input type="text" name="quantity" id="quantity" placeholder="Enter quantity">
+<td><a href="@Url.Action("AllInvestmentsAccount","BankAccount", new { id = @Model.Id })">Choose account</a></td>&nbsp;&nbsp;&nbsp;
+<br/>
+<br/>
+<td>
+    @using (Html.BeginForm("BuyOrder", "Investment", FormMethod.Post))
+    {
+        <input type="hidden" name="id" value="@Model.Id" />
+        <input type="hidden" name="acc" value="@ViewBag.AddedAccount" />
+        <input type="hidden" name="balance" value="@ViewBag.Balance" />
+         <input type="hidden" name="id" value="@Model.Id" />
+        <input type="hidden" name="quantity" id="quantityHidden" value="">
+        <button type="submit">Buy asset</button>
+    }
+</td>&nbsp;&nbsp;&nbsp;
+<td>
+    @using (Html.BeginForm("SellOrder", "Investment", FormMethod.Post))
+    {
+        <input type="hidden" name="id" value="@Model.Id" />
+        <input type="hidden" name="acc" value="@ViewBag.AddedAccount" />
+        <input type="hidden" name="id" value="@Model.Id" />
+        <input type="hidden" name="quantity" id="sellQuantityHidden" value="">
+        <button type="submit">Sell asset</button>
+    }
+</td>
+@if (@ViewBag.AddedAccount != null)
+{
+    <td><p>Account @ViewBag.AddedAccount</p></td>
+    <td><p>Balance @ViewBag.Balance</p></td>
+}
+
+@if(@ViewBag.ChooseAccount != null)
+{
+<td><p>@ViewBag.ChooseAccount</p></td>
+}
+
+@if(@ViewBag.NotValid != null)
+{
+<td><p>@ViewBag.NotValid</p></td>
+}
+
+@if (@ViewBag.BadAmount != null)
+{
+    <td><p>@ViewBag.BadAmount</p></td>
+}
+
+@if (@ViewBag.DontOwn != null)
+{
+    <td><p>@ViewBag.DontOwn</p></td>
+}
+
+@if (@ViewBag.BigAmount != null)
+{
+    <td><p>@ViewBag.BigAmount</p></td>
+}
+
+<script>
+    document.getElementById('quantity').addEventListener('input', function () {
+        document.getElementById('quantityHidden').value = this.value;
+    });
+    document.getElementById('quantity').addEventListener('input', function () {
+        document.getElementById('sellQuantityHidden').value = this.value;
+    });
+</script>
+
+

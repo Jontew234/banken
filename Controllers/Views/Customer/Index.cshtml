@@ -1,0 +1,43 @@
+﻿@model ChangeDataViewModel
+
+@if(ViewBag.First is not null)
+{
+    <p class="alert-danger">@ViewBag.First </p>
+}
+@if (ViewBag.Last is not null)
+{
+    <p class="alert-danger">@ViewBag.Last </p>
+}
+<h2>Edit Customer Data</h2>
+ <form asp-action="SaveChanges" method="post">
+    <div class="form-group">
+        <label asp-for="@Model.FirstName"></label>
+        <input asp-for="@Model.FirstName" class="form-control" />
+        <span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.LastName"></label>
+        <input asp-for="@Model.LastName" class="form-control" />
+        <span asp-validation-for="@Model.LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.PhoneNumber"></label>
+        <input asp-for="@Model.PhoneNumber" class="form-control" />
+        <span asp-validation-for="@Model.PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Address"></label>
+        <input asp-for="@Model.Address" class="form-control" />
+        <span asp-validation-for="@Model.Address" class="text-danger"></span>
+    </div>
+  
+        <button type="submit" class="btn btn-primary" onclick="return confirm('Do you want to save the changes?')">Save Changes</button>
+</form>
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["message"]
+    </div>
+    TempData["message"] = null;
+}
+

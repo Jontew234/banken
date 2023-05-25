@@ -1,0 +1,43 @@
+﻿@model LoanTermsViewModel
+
+@if(@ViewBag.Succed is not null)
+{
+    <p class="alert-success">@ViewBag.Succed</p>
+}
+@if (@ViewBag.Name is not null)
+{
+    <p class="alert-danger ">@ViewBag.Name </p>
+}
+@if (@ViewBag.TermsError is  not null)
+{
+    @foreach (var message in @ViewBag.TermsError)
+    {
+        <p class="alert-danger">@message</p>
+    }
+}
+
+<h1>Add Loan Terms</h1>
+
+<form method="post" action="@Url.Action("AddLoanTerms", "LoanTerm")">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="terms">Terms(percent of total capital)</label>
+        <input type="text" id="terms" name="Terms" class="form-control"required>
+     
+    </div>
+    <div class="form-group">
+        <label for="interestRate">Interest Rate:(In %)</label>
+        <input type="text" id="interestRate" name="Interestrate" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="isActive">Active:</label>
+        <select id="isActive" name="IsActive" class="form-control" required>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

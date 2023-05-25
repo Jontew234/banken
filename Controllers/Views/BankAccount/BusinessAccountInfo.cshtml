@@ -1,0 +1,48 @@
+﻿@using Platinum.Controllers
+@model DisplayAccountViewModel
+
+<h2>Accounts</h2>
+
+@if (!Model.Accounts.Any() || Model == null)
+{
+    <p>No accounts found.</p>
+}
+else
+{
+   
+    if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Account Number</th>
+                <th>Balance</th>
+                <th>Account Type</th>
+                <th>Transactions</th>
+                <th>Delete</th>
+                <th>All orders</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var account in Model.Accounts)
+            {
+                <tr>
+                    <td>@account.AccountNumber</td>
+                    <td>@account.Balance</td>
+                    <td>@account.AccountType</td>
+                   
+                    <td><a href="@Url.Action("AccountsTransactions", "Transaction", new { id = account.Id })">Transactions</a></td>
+                    <td>
+                        <a href="#" onclick="return confirm('Do you really want to delete this account?') ?
+        window.location.href='@Url.Action("DeleteAccount", "BankAccount", new { id = account.Id })' :
+        false;">Delete</a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}

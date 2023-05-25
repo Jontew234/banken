@@ -1,0 +1,37 @@
+﻿@model AllOrdersViewModel
+
+
+<h2>Transactions</h2>
+
+@if (!Model.Orders.Any())
+{
+    <p>No transactions found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Account Number</th>
+                <th>Buy/Sell</th>
+                <th>Amount</th>
+                <th>Asset</th>
+                <th>Sum</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaction in Model.Orders)
+            {
+                <tr>
+                    <td>@transaction.AccountNumber</td>
+                    <td>@(transaction.BuyOrsell ? "Buy" : "Sell")</td>
+                    <td>@transaction.Amount</td>
+                    <td>@transaction.Asset</td>
+                    <td>@transaction.Sum</td>
+                    <td>@transaction.time.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

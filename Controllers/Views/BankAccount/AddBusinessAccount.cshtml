@@ -1,0 +1,32 @@
+﻿
+
+@using Platinum.Areas.Identity.Data;
+@model AddBankAccountViewModel
+
+<h2>Create Bank Account</h2>
+
+<form asp-action="AddBusinessAccount" method="post">
+    <div class="form-group">
+        <label asp-for="AccountNumber"></label>
+        <input asp-for="AccountNumber" class="form-control" />
+
+    </div>
+    @Html.Hidden("Balance", 0)
+    @Html.Hidden("AccountType", AccountType.Checking.ToString())
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+@if (ViewBag.Taken != null)
+{
+    <p class="text-danger"> @ViewBag.Taken</p>
+}
+@if (ViewBag.Success != null)
+{
+    <p class="text-success"> @ViewBag.Success</p>
+}
+
+@if (ViewBag.Error != null)
+{
+    <p class="text-danger"> @ViewBag.Error</p>
+}
