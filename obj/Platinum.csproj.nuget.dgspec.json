@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.16, )"
@@ -70,6 +74,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "dotenv.net": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             },
             "itext7": {
               "target": "Package",

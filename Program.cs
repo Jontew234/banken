@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Platinum.Areas.Identity.Data;
 using Platinum.Controllers;
-using Microsoft.Extensions.Logging;
+using DotNetEnv;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -74,11 +74,15 @@ builder.Services.AddSingleton<IHostedService, RentTimerEvent>();
 
 
 
+// hämta nyckeln
+DotNetEnv.Env.Load();
+var FinanceKey = Environment.GetEnvironmentVariable("Finance");
+var CryptoKey = Environment.GetEnvironmentVariable("Crypto");
 
 builder.Services.AddHttpClient("Finance", client =>
 {
     client.BaseAddress = new Uri("https://real-time-finance-data.p.rapidapi.com/");
-    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "f12b3123f0msh235a051e6bd3dd1p138ea8jsn5caa25f528cd");
+    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", FinanceKey);
     client.DefaultRequestHeaders.Add("X-RapidAPI-Host", "real-time-finance-data.p.rapidapi.com");
 });
 
@@ -86,7 +90,7 @@ builder.Services.AddHttpClient("Finance", client =>
 builder.Services.AddHttpClient("Crypto", client =>
 {
     client.BaseAddress = new Uri("https://coinranking1.p.rapidapi.com");
-    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "f12b3123f0msh235a051e6bd3dd1p138ea8jsn5caa25f528cd");
+    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", CryptoKey);
     client.DefaultRequestHeaders.Add("X-RapidAPI-Host", "coinranking1.p.rapidapi.com");
 });
 

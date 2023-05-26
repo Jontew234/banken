@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "QXEKT4DTgrbIoN6FCXQ9qItrTTtcop8gD3oid/oCmVFhoN+QPLWG1vJHDqM4KzC9zrk1YbyJJmXXdYjhkFmZmA==",
+  "dgSpecHash": "QuOZfDjGYErJY35UFtjZaz5hVKcb0Ppm9FstYUACni5ijPiFbuRPU1yQwrrOcyOw0YzVai/SU/3OUpZeKCwNBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jonat\\Desktop\\Platinum - kopia2\\Platinum.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jonat\\.nuget\\packages\\dotenv.net\\3.1.2\\dotenv.net.3.1.2.nupkg.sha512",
+    "C:\\Users\\jonat\\.nuget\\packages\\dotnetenv\\2.5.0\\dotnetenv.2.5.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\itext7\\7.2.5\\itext7.7.2.5.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\itext7.commons\\7.2.5\\itext7.commons.7.2.5.nupkg.sha512",
@@ -50,6 +52,7 @@
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.16\\microsoft.entityframeworkcore.tools.6.0.16.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "C:\\Users\\jonat\\.nuget\\packages\\microsoft.extensions.configuration\\1.1.2\\microsoft.extensions.configuration.1.1.2.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
@@ -111,6 +114,7 @@
     "C:\\Users\\jonat\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\jonat\\.nuget\\packages\\sprache\\2.3.1\\sprache.2.3.1.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

@@ -886,3 +886,6 @@ C:\Users\jonat\Desktop\Platinum - kopia2\obj\Debug\net6.0\refint\Platinum.dll
 C:\Users\jonat\Desktop\Platinum - kopia2\obj\Debug\net6.0\Platinum.pdb
 C:\Users\jonat\Desktop\Platinum - kopia2\obj\Debug\net6.0\Platinum.genruntimeconfig.cache
 C:\Users\jonat\Desktop\Platinum - kopia2\obj\Debug\net6.0\ref\Platinum.dll
+C:\Users\jonat\Desktop\Platinum - kopia2\bin\Debug\net6.0\dotenv.net.dll
+C:\Users\jonat\Desktop\Platinum - kopia2\bin\Debug\net6.0\DotNetEnv.dll
+C:\Users\jonat\Desktop\Platinum - kopia2\bin\Debug\net6.0\Sprache.dll
