@@ -6,7 +6,14 @@ using DotNetEnv;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+DotNetEnv.Env.Load();
+var FinanceKey = Environment.GetEnvironmentVariable("Finance");
+var CryptoKey = Environment.GetEnvironmentVariable("Crypto");
 var connectionString = builder.Configuration.GetConnectionString("MinDbContextConnection") ?? throw new InvalidOperationException("Connection string 'MinDbContextConnection' not found.");
+
+
+
 
 builder.Services.AddDbContext<MinDbContext>(options =>
     options.UseSqlServer(connectionString).LogTo(Console.WriteLine, LogLevel.Information));
@@ -74,10 +81,8 @@ builder.Services.AddSingleton<IHostedService, RentTimerEvent>();
 
 
 
-// hämta nyckeln
-DotNetEnv.Env.Load();
-var FinanceKey = Environment.GetEnvironmentVariable("Finance");
-var CryptoKey = Environment.GetEnvironmentVariable("Crypto");
+
+
 
 builder.Services.AddHttpClient("Finance", client =>
 {
