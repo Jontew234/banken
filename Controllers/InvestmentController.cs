@@ -312,8 +312,6 @@ namespace Platinum.Controllers {
         // Denna metod ska funka
         public async Task SaveIndexAssetToDatabase(AllInvestments model)
         {
-
-            // detta ska bort sedan mot den som kommer som input
           AllInvestments m = new AllInvestments();
             m.Indexes = new List<Asset>();
            Asset adda = new Areas.Identity.Data.Asset();
