@@ -3,10 +3,14 @@
 @model DisplayAccountViewModel
 
 <h2>Accounts</h2>
-
-@if (!Model.Accounts.Any() || Model == null)
+ 
+@if (Model.Accounts.Count == 0 || Model == null)
 {
-    <p>No accounts found.</p>
+    <div>
+        <p>No accounts found.</p>
+        <a class="nav-link text-dark" asp-area="" asp-controller="BankAccount" asp-action="Index">Go back</a>
+    </div>
+    
 }
 else
 {

@@ -25,9 +25,9 @@ namespace Platinum.Areas.Identity.Data
         public async Task  FinanceEvents()
         {
             //await _assetApiController.CryptoCurrency();
-            //await  _assetApiController.StocksApple();
-            //await _assetApiController.StocksMicroSoft();
-            //await _assetApiController.Indexes();
+            await  _assetApiController.StocksApple();
+            await _assetApiController.StocksMicroSoft();
+            await _assetApiController.Indexes();
             
         }
 

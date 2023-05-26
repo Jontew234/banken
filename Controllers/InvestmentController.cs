@@ -312,15 +312,22 @@ namespace Platinum.Controllers {
         // Denna metod ska funka
         public async Task SaveIndexAssetToDatabase(AllInvestments model)
         {
-          AllInvestments m = new AllInvestments();
+            AllInvestments m = new AllInvestments();
             m.Indexes = new List<Asset>();
-           Asset adda = new Areas.Identity.Data.Asset();
-            adda.Price = 10;
-            adda.Name = "bombo";
-            adda.Type = "baddie";
-            adda.Exchange = "lälälä";
-            adda.Risk = "sjukt hög";
-            m.Indexes.Add(adda);
+
+            foreach (Asset asset in model.Indexes) 
+            {
+               
+                Asset adda = new Asset();
+                adda.Price = asset.Price;
+                adda.Name = asset.Name;
+                adda.Type = asset.Type;
+                adda.Exchange = asset.Exchange;
+                adda.Risk = asset.Risk;
+                m.Indexes.Add(adda);
+            }
+      
+       
 
             if (m.Indexes.Count() == 0 || m == null)
             {

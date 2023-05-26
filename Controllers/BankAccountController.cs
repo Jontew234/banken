@@ -142,7 +142,17 @@ namespace Platinum.Controllers
                 AddBankAccountViewModel model = new AddBankAccountViewModel();
                 model.AccountType = bankAccount.AccountType;
                 model.AccountNumber = bankAccount.AccountNumber;
-                model.Balance = bankAccount.Balance;
+                if (bankAccount is InvestmentAccount)
+                {
+                    InvestmentAccount investmentAccount = (InvestmentAccount)bankAccount;
+                    model.Balance = investmentAccount.AvailableAmount;
+
+                }
+                else 
+                {
+                    model.Balance = bankAccount.Balance;
+                }
+          
                 model.Id = bankAccount.Id;
                 model.HasCard = await AddedCardsCheck(bankAccount.Id);
                 mod.Accounts.Add(model);
@@ -188,6 +198,7 @@ namespace Platinum.Controllers
 
                 return View();
             }
+
             [HttpPost]
             public async Task<IActionResult> AddAccount(AddBankAccountViewModel model)
             {
@@ -200,6 +211,7 @@ namespace Platinum.Controllers
                         return RedirectToAction("Index");
                     }
                 }
+
                 if (ModelState.IsValid)
                 {
 
@@ -216,10 +228,12 @@ namespace Platinum.Controllers
                         accountinvest.Balance = model.Balance;
                         accountinvest.IsActive = true;
                         accountinvest.AvailableAmount = model.Balance;
-                        
-
+                   
                         await _context.bankAccounts.AddAsync(accountinvest);
                         await _context.SaveChangesAsync();
+                       
+      
+                   
 
                     }
                     else
